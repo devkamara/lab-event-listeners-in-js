@@ -16,13 +16,16 @@ function resetBackgroundColor() {
 function displayKeyPress(event) {
   const outputParagraph = document.getElementById('key-display');
   outputParagraph.textContent = `Key Pressed: ${event.key}`;
+  document.addEventListener('keydown', displayKeyPress);
 }
 
 // Process Text Input
 
 // Function to display user input in real-time
 function displayUserInput() {
-  // Implement the function to display user input
+  const outputParagraph = document.getElementById('user-output');
+  outputParagraph = document.getElementById('user-output');
+  outputParagraph.textContent = event.target.value;
 }
 
 // Attach Event Listeners
